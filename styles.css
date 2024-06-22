@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif,Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #f0eaea;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+.plan.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.plan h2 {
+  margin-top: 0;
+  color: #4f;
+}
+
+.plan.active {
+  box-shadow: 15px 10px 15px rgba(21, 9, 189, 0.1);
+}
+
+.price {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.toggle-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.toggle-button {
+  background-color: #439dfd;
+  color: #e7dfdf;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #083c74;
+}
+
+.currency-buttons, .unit-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.currency-button, .unit-button {
+  background-color: #eee2e2;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.currency-button.active, .unit-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.currency-button:hover, .unit-button:hover {
+  background-color: #ccc;
+}
+
+footer {
+  background-color: #333;
+  color: #faf4f4;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

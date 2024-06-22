@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Pricing Plans</h1>
+    </div>
+  </header>
+  
+  <main>
+    <section class="pricing-plans container">
+      <div class="plan basic active">
+        <h2>Basic Plan</h2>
+        <p class="price" data-price="currency10/unit">$10/month</p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+      </div>
+      <div class="plan premium">
+        <h2>Premium Plan</h2>
+        <p class="price" data-price="currency20/unit">$20/month</p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="toggle-buttons container">
+      <button class="toggle-button active" data-plan="basic">Basic</button>
+      <button class="toggle-button" data-plan="premium">Premium</button>
+      
+      <!-- Currency selection -->
+      <div class="currency-buttons">
+        <button class="currency-button active" data-currency="$">USD</button>
+        <button class="currency-button" data-currency="€">EUR</button>
+        <button class="currency-button" data-currency="¥">JPY</button>
+      </div>
+      
+      <!-- Unit selection -->
+      <!-- <div class="unit-buttons">
+        <button class="unit-button active" data-unit="/month">/month</button>
+        <button class="unit-button" data-unit="/year">/year</button>
+      </div> -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Pricing Page. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
